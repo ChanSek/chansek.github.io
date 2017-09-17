@@ -1,4 +1,4 @@
-title: Hello, world! I'm David Freeman
+title: Chandra Sekhar's Blog'
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -10,7 +10,7 @@ url: "https://chansek.github.io" # the base hostname & protocol for your site, e
 # Author Settings
 author: Chandra Sekhar Nayak
 author-img: chansek.jpg
-about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
+about-author: I am an android developer.
 twitter: iChanSek
 facebook: iChanSek
 github: ChanSek
