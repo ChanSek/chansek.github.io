@@ -9,7 +9,7 @@ url: "https://chansek.github.io" # the base hostname & protocol for your site, e
 
 # Author Settings
 author: Chandra Sekhar Nayak
-author-img: chansek.jpg # add your photo
+author-img: chansek.jpg
 about-author: I am a web developer focusing on front-end development. Always hungry to keep learning. # add description
 twitter: iChanSek
 facebook: iChanSek
@@ -18,7 +18,7 @@ linkedin: # add your Linkedin handle
 email: chansek@live.com
 
 # Disqus
-discus-identifier: mr-brown # add your discus identifier
+discus-identifier: chandrasekharnayak # add your discus identifier
 
 # Tracker
 analytics: # Google Analytics
