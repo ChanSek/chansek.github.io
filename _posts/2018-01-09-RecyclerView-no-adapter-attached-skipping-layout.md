@@ -4,7 +4,7 @@ title: "E/RecyclerView: No adapter attached; skipping layout"
 date: 2018-01-09 13:32:20 +0300
 description:  # Add post description (optional)
 img:  # Add image post (optional)
-tags: [Errors, Android, XML]
+tags: [Errors, Android, RecyclerView]
 ---
 This error is a common error many developers might find if they do a silly mistake. Let's discuss about the problem:
 ## Problem:
