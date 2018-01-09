@@ -13,7 +13,7 @@ After inflating the RecyclerView into your view class (Activity or Fragment), yo
 recyclerView = findViewById(R.id.recycler_view);
 adapter = new MyAdapter();
 recyclerView.setAdapter(adapter);
-{$ endhighlight %}
+{% endhighlight %}
 
 ## Solution:
 {% highlight java %}
@@ -23,6 +23,6 @@ recyclerView.setLayoutManager(manager);
 recyclerView.setHasFixedSize(true);
 adapter = new MyAdapter();
 recyclerView.setAdapter(adapter);
-{$ endhighlight %}
+{% endhighlight %}
 Since we have set the layout manager for RecyclerView, it should now be able to draw the layout properly.
 > NOTE: setHasFixedSize(...) has nothing to do with current problem. It is just added in the example as a good practice to make our layout drawing faster.
