@@ -2,8 +2,8 @@
 layout: post
 title: XML document structures must start and end within the same entity.
 date: 2018-01-08 13:32:20 +0300
-description:
-img:
+description:  # Add post description (optional)
+img:  # Add image post (optional)
 tags: [Errors, Android, XML]
 ---
 Let's try to find out when this error can occur and then will try to fix this with a solution.
