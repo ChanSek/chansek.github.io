@@ -1,6 +1,6 @@
 ---
 layout: post
-title: E/RecyclerView: No adapter attached; skipping layout
+title: RecyclerView: No adapter attached; skipping layout
 date: 2018-01-09 13:32:20 +0300
 description:  # Add post description (optional)
 img:  # Add image post (optional)
