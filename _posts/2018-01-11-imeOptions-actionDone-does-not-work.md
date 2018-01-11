@@ -22,7 +22,7 @@ Let's consider you want to have an EditText for taking only alpha numeric values
         android:imeOptions="actionDone"
         android:inputType="text" />
 {% endhighlight %}
-If you observe closely, the EditText has {% highlight %} android:digits {% endhighlight %} attribute for filtering the allowed characters for input. This attribute is the cause behind this problem.
+If you observe closely, the EditText has `android:digits` attribute for filtering the allowed characters for input. This attribute is the cause behind this problem.
 
 ## Solution:
 So to avoid this problem, you have to add {% highlight %} android:singleLine {% endhighlight %} attribute. Below is the final working XML.
