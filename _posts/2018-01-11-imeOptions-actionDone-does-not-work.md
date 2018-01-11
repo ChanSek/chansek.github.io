@@ -25,7 +25,7 @@ Let's consider you want to have an EditText for taking only alpha numeric values
 If you observe closely, the EditText has `android:digits` attribute for filtering the allowed characters for input. This attribute is the cause behind this problem.
 
 ## Solution:
-So to avoid this problem, you have to add {% highlight %} android:singleLine {% endhighlight %} attribute. Below is the final working XML.
+So to avoid this problem, you have to add `android:singleLine` attribute. Below is the final working XML.
 {% highlight xml %}
 <android.support.v7.widget.AppCompatEditText
         android:id="@+id/newDeliverable"
@@ -41,4 +41,4 @@ So to avoid this problem, you have to add {% highlight %} android:singleLine {% 
 {% endhighlight %}
 
 ## Conclusion:
-If we have {% highlight %} android:digits {% endhighlight %} attribute in {% highlight %} EditText {% endhighlight %}, then {% highlight %} android:imeOptions {% endhighlight %} will work ones we add {% highlight %} android:singleLine {% endhighlight %} attribute.
+If we have `android:digits` attribute in `EditText`, then `android:imeOptions` will work ones we add `android:singleLine` attribute.
