@@ -28,4 +28,7 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
 
+# Pagination Settings
+paginate: 5
+
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
