@@ -27,10 +27,10 @@ analytics: # Google Analytics
 markdown: kramdown
 plugins:
   - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Pagination Settings
 paginate: 5
+paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-
-theme: jekyll-theme-cayman
