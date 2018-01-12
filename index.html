@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-<!--{% for post in site.posts %}
+{% for post in paginator.posts %}
 <article class="post">
   {% if post.img %}
     <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
@@ -14,10 +14,10 @@ layout: main
     <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
   </div>
 </article>
-{% endfor %}-->
+{% endfor %}
 
 <!-- This loops through the paginated posts -->
-{% for post in paginator.posts %}
+<!--{% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ post.date }}</span>
@@ -25,7 +25,7 @@ layout: main
   <div class="content">
     {{ post.content }}
   </div>
-{% endfor %}
+{% endfor %}-->
 
 <!-- Pagination links -->
 <div class="pagination">
