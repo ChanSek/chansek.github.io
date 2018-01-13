@@ -21,7 +21,7 @@ email: chansek@live.com
 discus-identifier: chansek-github-io # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-112414838-1
 
 # Build Settings
 markdown: kramdown
