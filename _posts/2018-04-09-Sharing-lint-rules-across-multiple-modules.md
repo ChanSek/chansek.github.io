@@ -9,11 +9,11 @@ tags: [Android, Lint, Static Analysis, Code Quality]
 Recently I got a requirement where I wanted to modify the default lint rules applied to my application. There were many lint warnings, I wanted to supress. Of course there are many ways to achieve this and all those solutions are listed [in this documentation](https://developer.android.com/studio/write/lint).
 
 But there are few problems with the solutions given in the documentation.
-1. Supressing warnings in your IDE 
+1. Supressing warnings in your IDE  
  It only applies locally in your machine. CI server has no clue about the supress rules. So it still raises those as warnings or errors.
-2. Supressing warnings in `build.gradle`'s `lintOptions` 
+2. Supressing warnings in `build.gradle`'s `lintOptions`  
  This can work, but we need to add the `lintOptions` separately to every module's gradle file.
-3. Supressing warnings in `lint.xml` 
+3. Supressing warnings in `lint.xml`  
  This is the best option I thought to use, but as per documentation, we should put it in our root folder. I didn't want to do it in this way as I do have multiple modules and all those modules might not share the same rules mentioned in `lint.xml` configuration.
 
 This article is about how I solved this.
