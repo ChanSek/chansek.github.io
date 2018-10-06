@@ -20,7 +20,7 @@ It is a genuine question that anybody can ask is, "What are the advantages of ex
 
 This is the first video explaining the reason why `Chanse Code` is made. Please have a look at it and leave your honest feedback to improve the channel.
 
-[![Introducing Chanse Code](https://chansek.github.io/assets/img/chanse-code.jpg)](https://www.youtube.com/watch?v=nADRb91lhy8)
+[![Introducing Chanse Code](https://chansek.github.io/assets/img/chanse-code.png)](https://www.youtube.com/watch?v=nADRb91lhy8)
 
 ## Conclusion:
 If you liked the motivation behind the channel, please do Like, Share and Subscribe to it. And if you want to be an instructor here, then we would love to welcome you. Please contact me to make it forward.
