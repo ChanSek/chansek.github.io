@@ -3,7 +3,7 @@ layout: post
 title: "Introducing Chanse Code"
 date: 2018-11-23 19:37:20 +0530
 description:  # Add post description (optional)
-img:  # Add image post (optional)
+img: chanse-code.png
 tags: [Chanse Code]
 ---
 In today's internet world, everybody learns from internet and I am not an exception. I have been learning from internet since last 6 - 7 years. So thought of giving back to the community by creating some content and share my learnings to the new comers.
