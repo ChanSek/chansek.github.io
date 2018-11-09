@@ -3,7 +3,7 @@ layout: post
 title: "How System.out.println() works internally"
 date: 2018-11-09 18:55:20 +0530
 description:  # Add post description (optional)
-img: chanse-code.png
+img: sysout.png
 tags: [Chanse Code]
 ---
 In this video we have tried to clone the functionality of System.out.println() with a hope that after learning this, viewers will get a clear understanding of the API works internally.
