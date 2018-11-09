@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing Chanse Code"
-date: 2018-11-23 19:37:20 +0530
+date: 2018-10-23 19:37:20 +0530
 description:  # Add post description (optional)
 img: chanse-code.png
 tags: [Chanse Code]
