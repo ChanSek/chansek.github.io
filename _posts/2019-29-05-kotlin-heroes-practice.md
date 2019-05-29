@@ -3,7 +3,7 @@ layout: post
 title: "Kotlin Heroes: Practice"
 date: 2019-05-29 10:51:20 +0530
 description: A Kotlin contest by JetBrains in collaboration with CodeForces
-img: 
+img: kotlin-heroes.png
 tags: [Kotlin, Contest, Kotlin Heroes, JetBrains, CodeForces]
 ---
 This post answers the questions of **Kotlin Heroes: Practice** contest.
