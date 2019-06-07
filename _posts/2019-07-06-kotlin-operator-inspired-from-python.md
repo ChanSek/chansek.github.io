@@ -3,7 +3,7 @@ layout: post
 title: "Kotlin Operator inspired from Python"
 date: 2019-06-07 11:18:20 +0530
 description: How I used Kotiln's operator overloading feature to mimic a Python operator.
-img: kotlin-heroes.png
+img: kotlin-python.png
 tags: [Kotlin, Contest, Python, HackerRank, Algorithm]
 ---
 Since last week, I am practicing *HackerRank* problems in *Python* to learn it. While solving probelms, yesterday I found an interesting operator in Python. I still don't know what it is called though.
