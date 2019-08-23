@@ -3,7 +3,7 @@ layout: post
 title: "Extension Functions + Schedulers in RxJava chain"
 date: 2019-08-23 22:03:20 +0530
 description: Leveraging Kotlin's extension function feature to apply schedulers in Rxjava chain
-img: kotlin-heroes.png
+img:
 tags: [Kotlin, RxJava, Extension Function, Scheduler]
 ---
 It's quite funny that when Android developers are gradually migrating from `RxJava` to `Coroutines Flow`, I started learning `Rxjava`.
