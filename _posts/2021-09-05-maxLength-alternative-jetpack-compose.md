@@ -38,14 +38,13 @@ fun PinCodeField() {
     var text by remember { mutableStateOf("") }
     OutlinedTextField(
         value = text,
-        onValueChange = { text = manageLength(it) },
-        maxLength = 6
+        onValueChange = { text = manageLength(it) }
     )
 }
 
 private fun manageLength(input: String) = if (input.length > 6) input.substring(0..5) else input
 ```
-
+s
 Notice that, instead of simply assigning the input value to text in `onValueChange` callback, we do have a validation check and the asssign the output of `manageLength` function to text.
 
 If you are new to Jetpack Compose, thhiss might be helpful. Thank you for reading!!!
