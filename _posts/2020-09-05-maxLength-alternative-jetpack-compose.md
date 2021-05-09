@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "android:maxLength Alternative in Jetpack Compose"
-date: 2020-05-09 07:30:20 +0530
+date: 2021-05-09 07:30:20 +0530
 description: How to restrict a limited number of characters in a TextField
 img:
 tags: [Jetpack Compose, Android XML, TextField, EditText]
