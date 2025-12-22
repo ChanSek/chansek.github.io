@@ -55,5 +55,30 @@ if (navTrigger) {
   navTrigger.addEventListener('change', function() {
     document.body.style.overflow = this.checked ? 'hidden' : '';
   });
+
+  // Close menu when clicking outside
+  document.addEventListener('click', function(event) {
+    const navLinks = document.querySelector('.nav-links');
+    const menuIcon = document.querySelector('.menu-icon');
+    const isClickInsideNav = navLinks && navLinks.contains(event.target);
+    const isClickOnMenuIcon = menuIcon && menuIcon.contains(event.target);
+
+    // If menu is open and click is outside nav and not on menu icon
+    if (navTrigger.checked && !isClickInsideNav && !isClickOnMenuIcon) {
+      navTrigger.checked = false;
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close menu when clicking on nav links (for navigation)
+  const navLinksElements = document.querySelectorAll('.nav-link');
+  navLinksElements.forEach(link => {
+    link.addEventListener('click', function() {
+      if (navTrigger.checked) {
+        navTrigger.checked = false;
+        document.body.style.overflow = '';
+      }
+    });
+  });
 }
 </script>
