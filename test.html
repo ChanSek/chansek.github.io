@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - Modern Blog Design</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8f9fa;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
+        header {
+            background: white;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2563eb;
+        }
+        .post-card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .post-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.15);
+        }
+        a { color: #2563eb; text-decoration: none; }
+        a:hover { color: #1d4ed8; }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Chandra Sekhar Nayak - Engineering Blog</h2>
+    </header>
+    <div class="container">
+        <h1>Modern Professional Design Test</h1>
+        <div class="post-card">
+            <h3>If you can see this styled properly, the HTML/CSS is working!</h3>
+            <p>This page has inline CSS to test if the styling works at all.</p>
+        </div>
+    </div>
+</body>
+</html>
