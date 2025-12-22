@@ -1,0 +1,59 @@
+---
+layout: main
+title: Cerve
+permalink: /cerve/
+---
+
+<div class="cerve-page">
+  <header class="cerve-header">
+    <h1>Cerve Engineering Blog</h1>
+    <p>Technical insights, architecture deep-dives, and engineering stories from building Cerve's ONDC marketplace platform</p>
+  </header>
+
+  <div class="posts-grid">
+    {% assign cerve_posts = site.posts | where_exp: "post", "post.tags contains 'Cerve'" %}
+
+    {% if cerve_posts.size > 0 %}
+      {% for post in cerve_posts %}
+      <article class="post-card">
+        {% if post.img %}
+        <div class="post-card-image">
+          <a href="{{post.url | prepend: site.baseurl}}">
+            <img src="{{"/assets/img/" | prepend: site.baseurl | append : post.img}}" alt="{{post.title}}">
+          </a>
+        </div>
+        {% endif %}
+        <div class="post-card-content">
+          <div class="post-meta">
+            <time datetime="{{post.date | date: '%Y-%m-%d'}}">{{post.date | date: '%b %d, %Y'}}</time>
+            <span class="post-reading-time">
+              {% capture words %}{{ post.content | number_of_words }}{% endcapture %}
+              {% unless words contains "-" %}
+                {{ words | plus: 250 | divided_by: 250 | append: " min read" }}
+              {% endunless %}
+            </span>
+          </div>
+          <h2 class="post-card-title">
+            <a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a>
+          </h2>
+          <p class="post-card-excerpt">{{ post.description | default: post.content | strip_html | truncatewords: 25 }}</p>
+          {% if post.tags %}
+          <div class="post-tags">
+            {% for tag in post.tags limit:3 %}
+              <a href="{{site.baseurl}}/tags#{{tag}}" class="tag-badge">{{ tag }}</a>
+            {% endfor %}
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    {% else %}
+      <div class="cerve-content">
+        <section class="cerve-section">
+          <h2>Coming Soon</h2>
+          <p>Engineering blog posts from the Cerve team will appear here.</p>
+        </section>
+      </div>
+    {% endif %}
+  </div>
+</div>
