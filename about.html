@@ -1,0 +1,67 @@
+---
+layout: main
+title: About
+permalink: /about/
+---
+
+<div class="about-page">
+  <header class="about-header">
+    <div class="about-avatar">
+      <img src="{{site.baseurl}}/assets/img/{% if site.author-img %}{{site.author-img}}{% endif %}" alt="{{site.author}}">
+    </div>
+    <h1>{{ site.author }}</h1>
+    <p class="about-tagline">{{ site.about-author }}</p>
+  </header>
+
+  <div class="about-content">
+    <section class="about-section">
+      <h2>About This Blog</h2>
+      <p>
+        Welcome to my engineering blog! This is where I share insights, tutorials, and deep dives
+        into mobile development, with a focus on Android, Kotlin, and Jetpack Compose.
+      </p>
+      <p>
+        I write about real-world problems I've encountered and solved, architectural patterns,
+        best practices, and the occasional deep dive into how things work under the hood.
+      </p>
+    </section>
+
+    <section class="about-section">
+      <h2>Topics I Write About</h2>
+      <ul class="topics-list">
+        <li>Android Development</li>
+        <li>Kotlin Programming</li>
+        <li>Jetpack Compose</li>
+        <li>Mobile Architecture</li>
+        <li>Best Practices & Patterns</li>
+        <li>Performance Optimization</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Connect With Me</h2>
+      <div class="social-links-about">
+        {% if site.github %}
+          <a href="https://github.com/{{site.github}}" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa fa-github"></i> GitHub
+          </a>
+        {% endif %}
+        {% if site.twitter %}
+          <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa fa-twitter"></i> Twitter
+          </a>
+        {% endif %}
+        {% if site.linkedin %}
+          <a href="https://linkedin.com/in/{{site.linkedin}}" target="_blank" rel="noopener noreferrer" class="social-link">
+            <i class="fa fa-linkedin"></i> LinkedIn
+          </a>
+        {% endif %}
+        {% if site.email %}
+          <a href="mailto:{{site.email}}" class="social-link">
+            <i class="fa fa-envelope"></i> Email
+          </a>
+        {% endif %}
+      </div>
+    </section>
+  </div>
+</div>

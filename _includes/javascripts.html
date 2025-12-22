@@ -1,2 +1,59 @@
-<!-- Main Js -->
-<script src="{{site.baseurl}}/assets/js/main.js"></script>
+<script>
+// Dark mode toggle
+(function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+  // Check for saved theme preference or default to system preference
+  const currentTheme = localStorage.getItem('theme') ||
+                      (prefersDark.matches ? 'dark' : 'light');
+
+  // Apply theme on load
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  // Toggle theme
+  if (themeToggle) {
+    themeToggle.addEventListener('click', function() {
+      const theme = document.documentElement.getAttribute('data-theme');
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    });
+  }
+
+  // Listen for system theme changes
+  prefersDark.addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) {
+      document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+    }
+  });
+})();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    const href = this.getAttribute('href');
+    if (href !== '#' && href !== '#0') {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  });
+});
+
+// Mobile menu toggle
+const navTrigger = document.getElementById('nav-trigger');
+if (navTrigger) {
+  navTrigger.addEventListener('change', function() {
+    document.body.style.overflow = this.checked ? 'hidden' : '';
+  });
+}
+</script>

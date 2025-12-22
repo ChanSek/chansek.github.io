@@ -1,19 +1,32 @@
-<div class="container">
-  <nav class="pagination" role="pagination">
-    <ul>
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <p><a class="newer-posts" href="{{ site.baseurl }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
-        {% else %}
-        <p><a class="newer-posts" href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a></p>
-        {% endif %}
+<nav class="pagination" role="navigation" aria-label="Pagination">
+  {% if paginator.previous_page or paginator.next_page %}
+  <div class="pagination-wrapper">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="{{ site.baseurl }}/" class="pagination-link newer" rel="prev">
+        <i class="fa fa-arrow-left"></i>
+        <span>Newer Posts</span>
+      </a>
+      {% else %}
+      <a href="{{ site.baseurl }}/page/{{ paginator.previous_page }}/" class="pagination-link newer" rel="prev">
+        <i class="fa fa-arrow-left"></i>
+        <span>Newer Posts</span>
+      </a>
       {% endif %}
+    {% else %}
+    <span class="pagination-link disabled"></span>
+    {% endif %}
 
-      <p><span class="page-number">Page {{paginator.page}} of {{paginator.total_pages}}</span></p>
+    <span class="pagination-info">Page {{paginator.page}} of {{paginator.total_pages}}</span>
 
-      {% if paginator.next_page %}
-      <p><a class="older-posts" href="{{ site.baseurl }}/page/{{ paginator.next_page }}/"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
-      {% endif %}
-    </ul>
-  </nav>
-</div>
+    {% if paginator.next_page %}
+    <a href="{{ site.baseurl }}/page/{{ paginator.next_page }}/" class="pagination-link older" rel="next">
+      <span>Older Posts</span>
+      <i class="fa fa-arrow-right"></i>
+    </a>
+    {% else %}
+    <span class="pagination-link disabled"></span>
+    {% endif %}
+  </div>
+  {% endif %}
+</nav>

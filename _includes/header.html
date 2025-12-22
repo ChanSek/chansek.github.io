@@ -1,0 +1,29 @@
+<header class="site-header">
+  <div class="header-wrapper">
+    <div class="header-left">
+      <a href="{{site.baseurl}}/" class="site-title">{{ site.author }}</a>
+    </div>
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-links">
+        <a href="{{site.baseurl}}/" class="nav-link">Home</a>
+        <a href="{{site.baseurl}}/tags" class="nav-link">Tags</a>
+        <a href="{{site.baseurl}}/about" class="nav-link">About</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.657 4.343L14.243 5.757M5.757 14.243L4.343 15.657M15.657 15.657L14.243 14.243M5.757 5.757L4.343 4.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 10.5C16.8 14.8 13.2 18.3 8.9 18.5C4.6 18.7 1.1 15.2 1.3 10.9C1.5 6.6 5 3.1 9.3 2.9C9.5 2.9 9.8 2.9 10 2.9C7.8 4.3 6.3 6.7 6.5 9.5C6.7 13.1 9.6 16 13.2 16.2C15 16.3 16.6 15.6 17.8 14.4C17.9 13.1 17.6 11.8 17 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>

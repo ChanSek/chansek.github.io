@@ -1,0 +1,43 @@
+<footer class="site-footer">
+  <div class="footer-wrapper">
+    <div class="footer-content">
+      <div class="footer-about">
+        <h3>{{ site.author }}</h3>
+        <p>{{ site.about-author }}</p>
+      </div>
+      <div class="footer-links">
+        <h4>Connect</h4>
+        <div class="social-links">
+          {% if site.github %}
+            <a href="https://github.com/{{site.github}}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fa fa-github"></i>
+            </a>
+          {% endif %}
+          {% if site.twitter %}
+            <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
+          {% if site.linkedin %}
+            <a href="https://linkedin.com/in/{{site.linkedin}}" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          {% endif %}
+          {% if site.youtube %}
+            <a href="https://youtube.com/channel/{{ site.youtube }}" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <i class="fa fa-youtube"></i>
+            </a>
+          {% endif %}
+          {% if site.email %}
+            <a href="mailto:{{site.email}}" aria-label="Email">
+              <i class="fa fa-envelope"></i>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {{site.time | date: '%Y'}} {{ site.author }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
