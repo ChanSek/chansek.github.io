@@ -1,16 +1,16 @@
-title: Chandra Sekhar's Blog'
+title: Chandra Sekhar Nayak
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A software engineering blog focused on Android development, Kotlin, Jetpack Compose,
+  and mobile engineering best practices. Insights, tutorials, and deep dives into
+  modern mobile development.
 permalink: ':title/'
-baseurl: "https://chansek.github.io" # the subpath of your site, e.g. /blog
-url: "https://chansek.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.chansek.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author Settings
 author: Chandra Sekhar Nayak
 author-img: chansek.jpg
-about-author: I am an android developer.
+about-author: Software Engineer specializing in Android development, Kotlin, and mobile architecture. Passionate about building elegant solutions and sharing knowledge with the engineering community.
 twitter: iChanSek
 youtube: UC2WD_P95G6qa6fD0iC1ZjgQ
 github: ChanSek
